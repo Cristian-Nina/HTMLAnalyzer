@@ -47,3 +47,8 @@ def check_website(url):
 if __name__ == "__main__":
     main()
     driver.quit()
+
+
+#Palabras claves:
+#["Icbc","icbc", "lcbc", "icdc", "lcdc", "Icdc", "accessbanking", "beneficionline", "perssonalpoint", "icb", "lcb", "cbc", "plurisoe", "bxsceoms", "csb", "uropaser", "urbaconstructora", "pwifasry", "globalfirecontrol", "utpfqsuf", "iingresoenllinea", "pwifasry", "iingresoenllinea", "sconlinebo", "argnetn1", "hombpm", "promociones-", "-clientes", "onnliincbc", "onlineicbc", "onlinelcbc", "accesshome", "ingresopeersonas", "ingresopersonas", "hombpm", "onlinebanking", "osagisu", "argentinaonline", "webadorsite", "redlinkd"]
+

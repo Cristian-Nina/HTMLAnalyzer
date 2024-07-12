@@ -11,7 +11,9 @@ service = Service(executable_path=r'C:\\Users\\nmalizia\\Downloads\\geckodriver-
 driver = webdriver.Firefox(options=options, service=service)
 
 # Palabras clave a buscar
-keywords = ["access banking", "usuario", "clave", "icbc", "ingresar"]
+#keywords = ["access banking", "usuario", "clave", "icbc", "ingresar"]
+keywords = ["icbc"]
+
 
 def main():
     with open('potentialphishing.txt') as file:

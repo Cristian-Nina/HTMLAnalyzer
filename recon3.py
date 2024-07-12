@@ -20,7 +20,13 @@ def main():
         website = website.strip()
         check_website(website)
 
+def clean_url(url):
+    if url.startswith("https://*"):
+        return url.replace("https://*.", "https://")
+    return url
+
 def check_website(url):
+    url = clean_url(url)  # Limpiar la URL si es necesario
     try:
         driver.get(url)
         time.sleep(3)  # Esperar a que la página cargue
@@ -29,7 +35,7 @@ def check_website(url):
         # Buscar palabras clave
         if all(keyword in html for keyword in keywords):
             print(f'Palabras clave encontradas en: {url}')
-            with open("links.txt", "a") as file:  # Cambia a links.txt
+            with open("links.txt", "a") as file:
                 file.write(f'{url}\n')
         else:
             print(f'No se encontraron palabras clave en: {url}')
